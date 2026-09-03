@@ -1,0 +1,319 @@
+<!-- <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Flames ❤️</title>
+
+<link rel="stylesheet" href="index.css">
+
+</head> <body>
+<div class="hearts">
+    <span>❤️</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💖</span>
+    <span>💘</span>
+    <span>❤️</span>
+    <span>💓</span>
+    <span>💞</span>
+</div>
+
+<main class="container">
+
+    <section class="card">
+
+        <div class="logo">💗</div>
+
+        <h1>Love <span>FLAMES</span></h1>
+
+        <p class="subtitle">
+            Discover what destiny says about your relationship ✨
+        </p>
+
+        <div class="input-group">
+
+            <div class="input-box">
+                <label for="name1">Your Name</label>
+
+                <div class="input-wrapper">
+                    <span>👤</span>
+                    <input
+                        type="text"
+                        id="name1"
+                        placeholder="Enter your name"
+                    >
+                </div>
+            </div>
+
+            <div class="heart">❤️</div>
+
+            <div class="input-box">
+                <label for="name2">Their Name</label>
+
+                <div class="input-wrapper">
+                    <span>💝</span>
+                    <input
+                        type="text"
+                        id="name2"
+                        placeholder="Enter their name"
+                    >
+                </div>
+            </div>
+
+        </div>
+
+        <button id="calculateBtn">
+            <span>💖</span>
+            Calculate Love
+            <span>💖</span>
+        </button>
+
+        <p id="error"></p>
+
+        <div id="result" class="result hidden">
+
+            <div class="result-heart">
+                💕
+            </div>
+
+            <p class="result-label">Your FLAMES Result</p>
+
+            <h2 id="resultTitle"></h2>
+
+            <p id="resultDescription"></p>
+
+            <div class="flames-display">
+                <span id="F">F</span>
+                <span id="L">L</span>
+                <span id="A">A</span>
+                <span id="M">M</span>
+                <span id="E">E</span>
+                <span id="S">S</span>
+            </div>
+
+            <button class="reset-btn" id="resetBtn">
+                Try Again 💗
+            </button>
+
+        </div>
+
+    </section>
+
+    <p class="footer">
+        Made with ❤️ for two special people
+    </p>
+
+</main>
+
+<script src="index.js"></script>
+
+</body> </html> -->
+
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLAMES ❤️ Love Calculator</title>
+
+<link rel="stylesheet" href="index.css">
+
+</head> <body>
+<!-- Animated Background -->
+<div class="background">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+</div>
+
+<!-- 3D Floating Hearts -->
+<div class="floating-hearts">
+    <span>❤️</span>
+    <span>💗</span>
+    <span>💕</span>
+    <span>💖</span>
+    <span>💘</span>
+    <span>💓</span>
+    <span>💞</span>
+    <span>❤️</span>
+    <span>💝</span>
+    <span>💗</span>
+</div>
+
+<!-- Blast Particles -->
+<div id="particles"></div>
+
+<main class="page">
+
+    <div class="love-card">
+
+        <!-- Top Badge -->
+        <div class="top-badge">
+            ✨ LOVE DESTINY ✨
+        </div>
+
+        <!-- Main Heart -->
+        <div class="main-heart">
+            <div class="heart-shape">❤️</div>
+            <div class="heart-ring"></div>
+        </div>
+
+        <h1>
+            Love
+            <span>FLAMES</span>
+        </h1>
+
+        <p class="subtitle">
+            Two names. One destiny. 💫
+        </p>
+
+        <!-- Names -->
+        <div class="names-container">
+
+            <!-- Person 1 -->
+            <div class="person-card">
+
+                <div class="person-icon">
+                    👤
+                </div>
+
+                <label for="name1">
+                    YOUR NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="name1"
+                    placeholder="Your Name"
+                    autocomplete="off"
+                >
+
+                <div class="input-glow"></div>
+
+            </div>
+
+            <!-- 3D Heart -->
+            <div class="between-heart">
+                <div class="heart-3d">
+                    ❤️
+                </div>
+            </div>
+
+            <!-- Person 2 -->
+            <div class="person-card">
+
+                <div class="person-icon">
+                    💝
+                </div>
+
+                <label for="name2">
+                    THEIR NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="name2"
+                    placeholder="Their Name"
+                    autocomplete="off"
+                >
+
+                <div class="input-glow"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Error -->
+        <div id="error"></div>
+
+        <!-- Calculate Button -->
+        <button id="calculateBtn" class="love-button">
+
+            <span class="button-shine"></span>
+
+            <span class="button-content">
+                💖
+                <span>REVEAL OUR DESTINY</span>
+                💖
+            </span>
+
+        </button>
+
+        <!-- FLAMES Display -->
+        <div class="flames-box">
+
+
+        <p>THE <span id="remainingCount">0</span> DESTINIES</p>
+
+            <div class="flames">
+
+                <div class="flame-letter" id="F">
+                    <b>F</b>
+                    <small>Friends</small>
+                </div>
+
+                <div class="flame-letter" id="L">
+                    <b>L</b>
+                    <small>Love</small>
+                </div>
+
+                <div class="flame-letter" id="A">
+                    <b>A</b>
+                    <small>Affection</small>
+                </div>
+
+                <div class="flame-letter" id="M">
+                    <b>M</b>
+                    <small>Marriage</small>
+                </div>
+
+                <div class="flame-letter" id="E">
+                    <b>E</b>
+                    <small>Enemy</small>
+                </div>
+
+                <div class="flame-letter" id="S">
+                    <b>S</b>
+                    <small>Siblings</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Result -->
+        <section id="result" class="result hidden">
+
+            <div class="result-explosion">
+                💥
+            </div>
+
+            <div class="result-heart">
+                💖
+            </div>
+
+            <p class="result-small">
+                DESTINY HAS SPOKEN
+            </p>
+
+            <h2 id="resultTitle">
+                Love ❤️
+            </h2>
+
+            <p id="resultDescription">
+                Your destiny is written in the stars.
+            </p>
+
+            <div class="result-line"></div>
+
+            <button id="resetBtn" class="reset-button">
+                🔄 TRY ANOTHER COUPLE
+            </button>
+
+        </section>
+
+    </div>
+
+    <p class="footer">
+        Made with ❤️ &nbsp; • &nbsp; Just for fun ✨
+    </p>
+
+</main>
+
+<script src="index.js"></script>
+
+</body> </html>
